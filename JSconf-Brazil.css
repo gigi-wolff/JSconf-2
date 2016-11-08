@@ -1,0 +1,349 @@
+@import url("/Users/Gigi/whitespace-reset.css");
+
+/* apply to all */
+
+
+/*  for width < 768px */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: normal 20px "Open Sans", sans-serif;
+  color: #444444;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+h2 {
+  font: 42px "Open Sans Light", sans-serif;
+  font-weight: 300;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.speakers,
+.schedule,
+.call-for-papers,
+.sponsors {
+  display: block;
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 65px;
+  /*border-bottom: 1px solid #f5f5f5;*/
+}
+
+.dividing-line {
+  max-width: 100%;
+  margin: 20px;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+
+/*------- header --------*/
+
+.grey-strip {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10px;
+  background: #f5f5f5;
+}
+
+nav ul {
+  position: fixed;
+  top: 10px;
+  height: 45px;
+  width: 100%;
+  text-align: center;
+  padding-top: 8px;
+  background: white;
+  border-bottom: 2px solid #f5f5f5;
+}
+
+header li {
+  display: inline;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: black;
+  margin-top: 15px;
+  margin-right: 40px;
+}
+
+header img {
+  display: block;
+  margin: 55px auto 0 auto;
+  width: 1570px;
+  height: 430px;
+}
+
+header a {
+  color: #444444;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+
+/*------- Tickets --------*/
+
+.tickets {
+  text-align: center;
+  max-width: 100%;
+  height: 220px;
+  margin: 0 30px;
+}
+
+.tickets h2 {
+  margin: 75px 0 50px 0;
+}
+
+.tickets h4 {
+  font: 16px "Open Sans Light", sans-serif;
+  margin-bottom: 10px;
+}
+
+.tickets h3 {
+  background: #377d22;
+  color: white;
+  width: 235px;
+  height: 42px;
+  margin: 0 auto;
+  padding-top: 8px;
+}
+
+.tickets a {
+  color: white;
+}
+
+
+/*------- Speakers --------*/
+
+.speakers h2 {
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 35px;
+}
+
+.speaker-block img {
+  width: 280px;
+  height: 230px;
+  margin: 0;
+}
+
+.speakers li {
+  display: inline-block;
+  width: 280px;
+  height: 380px;
+  margin-right: 10px;
+  margin-bottom: 8px;
+  vertical-align: top;
+  border: 2px solid #f5f5f5;
+}
+
+.speaker:hover .hover-block{
+  visibility: visible;
+  opacity: .95;
+  transition: opacity .5s;
+}
+
+.speaker-block,
+.hover-block {
+  height: 380px;
+}
+
+.hover-block {
+  position: relative;
+  top: -380px;
+  background: #191919;
+  color: white;
+  padding-top: 15px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.speaker-block h2,
+.hover-block h2 {
+  font-size: 26px;
+  font-weight: 900;
+  color: #377d22;
+}
+
+.speaker-block h2 {
+  margin: 30px auto 10px auto;
+}
+
+.hover-block h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.speaker-block h3,
+.hover-block p {
+  text-align: center;
+  font-weight: 300;
+}
+
+.speaker-block h3 {
+  font: 16px "Open Sans Light", sans-serif;
+  padding: 0 10px;
+  line-height: 150%;
+}
+
+.hover-block p {
+  font: 13px "Open Sans Light", sans-serif;
+  padding: 10px 20px;
+}
+
+.hover-block a {
+  color: #377d22;
+  font-weight: 900;
+}
+
+
+/*------- Schedule --------*/
+
+table {
+  max-width: 1000px;
+  font-size: 24px;
+  font-weight: 900;
+  text-align: left;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-top: 2px solid #f5f5f5;
+  color: #444444;
+}
+
+td {
+  padding: 15px;
+}
+
+tr.border-bottom td {
+  border-bottom: 2px solid #f5f5f5;
+}
+
+table a {
+  font-size: 18px;
+  font-weight: 900;
+  color: #377d22;
+}
+
+img.schedule-image {
+  width: auto;
+  height: 105px;
+}
+
+
+/*------- Call for Papers --------*/
+
+.call-for-papers {
+  max-width: 1000px;
+}
+
+.call-for-papers p {
+  text-align: left;
+  line-height: 30px;
+  font: 17px "Open Sans Light", sans-serif;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.call-for-papers h3 {
+  width: 245px;
+  height: 40px;
+  padding-top: 4px;
+  background-color: #377d22;
+  margin-bottom: 20px;
+}
+
+.call-for-papers h3 a {
+  font-size: 15px;
+  color: white;
+}
+
+.call-for-papers p a {
+  color: #377d22;
+  font-weight: 900;
+}
+
+
+/*------- Sponsors -----------*/
+
+.sponsors {
+  text-align: left;
+}
+
+.sponsors h3 {
+  font: 20px "Open Sans Light", sans-serif;
+  text-align: left;
+  font-weight: 400;
+  margin: 20px 0 10px 0;
+}
+
+ul.level-1 li,
+ul.level-2 li,
+ul.level-3 li,
+ul.level-4 li {
+  display: inline-block;
+  margin: 0 30px 50px 0;
+}
+
+.sponsors img.platinum,
+.sponsors img.gold,
+.sponsors img.silver,
+.sponsors img.support {
+  height: auto;
+  vertical-align: middle;
+}
+
+ul.level-2 {
+  max-width: 660px;
+}
+
+ul.level-1 li {
+  line-height: 250px;
+}
+
+ul.level-2 li {
+  line-height: 166px;
+}
+
+ul.level-3 li,
+{
+  line-height: 200px;
+}
+
+ul.level-4 li {
+  line-height: 160px;
+}
+
+.sponsors img.platinum,
+.sponsors img.gold {
+  width: 290px;
+}
+
+.sponsors img.silver,
+.sponsors img.support {
+  width: 180px;
+}
+
+
+/*------ Footer -------*/
+
+.bottom-image img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
