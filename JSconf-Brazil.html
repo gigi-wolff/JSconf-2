@@ -13,26 +13,26 @@
     <div class="grey-strip"></div>
     <nav>
       <ul>
-        <li><a href="#">Tickets</a></li>
-        <li><a href="#">Speakers</a></li>
-        <li><a href="#">Schedule</a></li>
+        <li><a href="#tickets">Tickets</a></li>
+        <li><a href="#speakers">Speakers</a></li>
+        <li><a href="#schedule">Schedule</a></li>
         <li><a href="#">Location</a></li>
-        <li><a href="#">Call for papers</a></li>
-        <li><a href="#">Sponsors</a></li>
+        <li><a href="#papers">Call for papers</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
         <li><a href="#">Code of Conduct</a></li>
       </ul>
     </nav>
     <img src="upperMasthead.png" alt="masthead">
   </header>
   <main>
-    <div class="tickets">
+    <div id="tickets">
       <h2>Tickets</h2>
       <h4>Super Early Bird is opened!</h4>
       <h3><a href="#">Buy JSConf Br Tickets</a></h3>
     </div>
     <div class="dividing-line"></div>
     <!-- Speakers -->
-    <div class="speakers">
+    <div id="speakers">
       <h2>Speakers</h2>
       <ul>
         <li class="speaker">
@@ -174,7 +174,7 @@
     </div>
     <div class="dividing-line"></div>
     <!-- Schedule -->
-    <div class="schedule">
+    <div id="schedule">
       <h2>Schedule</h2>
       <table>
         <tbody>
@@ -246,8 +246,15 @@
             </td>
           </tr>
           <tr class="border-bottom">
-            <td></td>
+            <td>12:00</td>
             <td>Monkeys in the Machine
+              <h6 class="small-box">webworkers</h6>
+              <h6 class="small-box">async</h6>
+              <h6 class="small-box">Shakespeare</h6>
+              <h6 class="small-box">deferred</h6>
+              <h6 class="small-box">promise</h6>
+              <h6 class="small-box">jquery</h6>
+              <h6 class="small-box">magic</h6>
               <br>
               <a href="#">Eric Mann</a>
             </td>
@@ -289,7 +296,7 @@
               <a href="#">David Dias</a>
             </td>
             <td>
-              <a href="#"><img class="schedule-image" src="DavidDias.png" alt="David Dias" /></a>
+              <a href="#"><img class="schedule-image" src="DaveDias.png" alt="David Dias" /></a>
             </td>
           </tr>
           <tr class="border-bottom">
@@ -312,6 +319,10 @@
           <tr class="border-bottom">
             <td>17:00</td>
             <td>ES6 on the frontend, in the real world
+              <h6 class="small-box">es6</h6>
+              <h6 class="small-box">harmony</h6>
+              <h6 class="small-box">browser</h6>
+              <h6 class="small-box">jealousy</h6>
               <br>
               <a href="#">John Paul</a>
             </td>
@@ -322,6 +333,10 @@
           <tr class="border-bottom">
             <td>17:30</td>
             <td>Rock the browser like it's 1983
+              <h6 class="small-box">weborder</h6>
+              <h6 class="small-box">neworder</h6>
+              <h6 class="small-box">synths</h6>
+              <h6 class="small-box">sockets</h6>
               <br>
               <a href="#">Eduardo Shiota</a>
             </td>
@@ -341,7 +356,7 @@
     </div>
     <div class="dividing-line"></div>
     <!-- Call for Papers -->
-    <div class="call-for-papers">
+    <div id="papers">
       <h2>Call for Papers</h2>
       <p>We are inviting the JavaScript community to submit talks for the upcoming JSConf BR. If you know someone who may deliver an interesting talk, please let us know and we'll contact them.</p>
       <p>Our talk selection process favors content (blind selection process); We want our community to be inclusive!</p>
@@ -354,7 +369,7 @@
       <p>PS: crazy topics get extra points ;)</p>
     </div>
     <div class="dividing-line"></div>
-    <div class="sponsors">
+    <div id="sponsors">
       <h2>Sponsors</h2>
       <h3>Platinum</h3>
       <ul class="level-1">
